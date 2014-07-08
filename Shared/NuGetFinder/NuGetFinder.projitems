@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>8b706b46-7518-4ed7-8220-94cc5e92f480</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NuGetFinder</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DetailsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Package.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PackageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResultsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SearchPage.cs" />
+  </ItemGroup>
+</Project>
