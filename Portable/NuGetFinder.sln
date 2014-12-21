@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetFinder", "NuGetFinder\NuGetFinder.csproj", "{413DE4A5-6EB7-4EC3-8A5E-2662A94193D1}"
@@ -222,6 +222,8 @@ Global
 		{80D430AA-9183-4E98-943B-B64B58694C96}.Release|x86.ActiveCfg = Release|x86
 		{80D430AA-9183-4E98-943B-B64B58694C96}.Release|x86.Build.0 = Release|x86
 		{80D430AA-9183-4E98-943B-B64B58694C96}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,21 +6,20 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 namespace NuGetFinder.Droid
 {
     [Activity(Label = "NuGetFinder", MainLauncher = true)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            Xamarin.Forms.Forms.Init(this, bundle);
-
-            SetPage(App.GetMainPage());
+			Forms.Init(this, bundle);
+            LoadApplication(new App());
         }
     }
 }

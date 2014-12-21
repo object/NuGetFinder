@@ -7,11 +7,24 @@ using Xamarin.Forms;
 
 namespace NuGetFinder
 {
-    public class App
+	public class App : Application
     {
-        public static Page GetMainPage()
-        {
-            return new NavigationPage(new SearchPage());
-        }
-    }
+		public App ()
+		{
+			Simple.OData.Client.V3Adapter.Reference();
+			MainPage = new NavigationPage(new SearchPage());
+		}
+
+		protected override void OnStart ()
+		{
+		}
+
+		protected override void OnSleep ()
+		{
+		}
+
+		protected override void OnResume ()
+		{
+		}    
+	}
 }

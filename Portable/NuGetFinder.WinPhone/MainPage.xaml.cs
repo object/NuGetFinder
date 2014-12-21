@@ -9,18 +9,19 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.WinPhone;
 
 
 namespace NuGetFinder.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
             InitializeComponent();
 
             Forms.Init();
-            Content = NuGetFinder.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new NuGetFinder.App());
         }
     }
 }

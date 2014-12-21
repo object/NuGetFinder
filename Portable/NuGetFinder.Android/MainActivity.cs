@@ -12,15 +12,14 @@ using Xamarin.Forms.Platform.Android;
 namespace NuGetFinder.Droid
 {
     [Activity(Label = "NuGetFinder", MainLauncher = true)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             Xamarin.Forms.Forms.Init(this, bundle);
-
-            SetPage(App.GetMainPage());
+			LoadApplication (new App ());
         }
     }
 }
